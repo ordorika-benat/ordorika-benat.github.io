@@ -24,81 +24,20 @@
 			</nav>
 		</header>
 
-		<!-- Ordurtegiaren taula -->
-		<section class="ordutegia">
-				<h2>Ordutegia</h2>
-			<table>
-				<tr>
-					<th>Ordutegia</th>
-					<th>Astelehena</th>
-					<th>Asteartea</th>
-					<th>Asteazkena</th>
-					<th>Osteguna</th>
-					<th>Ostirala</th>
-					<th>Larunbata</th>
-					<th>Igandea</th>
-				</tr>
-				<tr>
-					<td>Udako ordutegia</td>
-					<td>9:00-22:00</td>
-					<td>9:00-22:00 </td>
-					<td>10:00-22:00</td>
-					<td>9:00-22:00</td>
-					<td>9:00-22:00</td>
-					<td>9:00-14:00</td>
-					<td>Itxita</td>
-				</tr>
-				<tr>
-					<td>Neguko ordutegia</td>
-					<td>9:00-20:00</td>
-					<td>9:00-20:00</td>
-					<td>12:00-20:00</td>
-					<td>9:00-20:00</td>
-					<td>9:00-20:00</td>
-					<td>9:00-14:00</td>
-					<td>Itxita</td>
-				</tr>
-			</table>
+		<h2 class="bezeroizenburu">More info</h2>
+		<section class="bezeroak"><!--hemen Txinpartak dituen bezero nagusiak agertzen dira, kasu honetan bezeroen logoak agertzen dira eta logo bakoitzan klikatzerakoan logo
+			 horren enpresaren dagokion web-orrialdera bidaltzen dizu-->
+			<article><a href="https://www.linkedin.com/in/be%C3%B1at-garrido-de-ordorika-03ba0b199"><img src="img/logoak/Linkedin.png" alt="linkedin"/></a></article>
+			<article><a href="https://github.com/ordorika-benat"><img src="img/logoak/Github.png" alt="Github"></a></article>
 		</section>
-
-		<!-- Kontaktu formulario. e-mail bat bidaltzeko bezeroan lehenetsitako aplikazioa irekiko du -->
-		<section class="formularioa"> 
-				<h2>Jarri gurekin harremanetan</h2>
-					<form action="mailto:info@txinparta.eus" method="post" enctype="text/plain">
-							<label>Izena:</label>
-							<input type="text" name="Izena">
-			    		<label>Abizena:</label>
-							<input type="text" name="Abizena">
-							<label>E-mail:</label>
-							<input type="email" name="email" value="" required></p>
-							<label>Idatzi zure mezua:</label>
-		    			<textarea></textarea>
-		    			<input type="submit" value="Bidali">
-		    	</form>
+		
+		<h2 class="bezeroizenburu">Contact me</h2>
+		<section class="bezeroak">
+			<article>Gmail: benat.garridode@gmail.com</article>
 		</section>
-
-		<aside>
-			<h2>Non gaude?</h2>
-			<!--KONTUZ. Ez Ezabatu! Div honetan mapa txertatuko da Javascript bidez (Leaflet.js)-->
-			<div id="map"></div>
-			<!-- Mapa sortzen duen script-a-->
-			<script>
-				var map = L.map('map').setView([43.2625, -2.9344],13);
-				L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				    attribution: 'Map data &copy;<a href="http://openstreetmap.org">OpenStreetMap</a>contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery ©<a href="http://cloudmade.com">CloudMade</a>',
-				    maxZoom: 18
-				}).addTo(map);
-				L.control.scale().addTo(map);
-				L.marker([43.25740, -2.90353 ]).addTo(map).bindPopup("<strong>Txurdinaga</strong><br>Ornilla doktorearen kalea, 1<br>48004 - Bilbao");
-				L.marker([43.26286, -2.93741]).addTo(map).bindPopup("<strong>Abando</strong><br>Atxukarro doktorearen Kalea, 3<br>48011 - Bilbao");
-				L.marker([43.27179, -2.94718]).addTo(map).bindPopup("<strong>Deustu</strong><br>Agirre lehendakariaren etorbidea, 12<br>48014 - Bilbao");
-			</script>
-		</aside>
-
 		<footer>
-			<p>© Txinparta 2018</p>
+			<p>Beñat Garrido ©</p>
 		</footer>
 		<video class="fullscreen" src="vid/jendea.mp4" autoplay loop muted></video>
-		<audio autoplay hidden src="vid/320498__frankum__tension-orchestra-chords.mp3"></audio>
 	</body>
 </html>
