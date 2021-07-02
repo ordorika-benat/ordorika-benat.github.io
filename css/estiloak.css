@@ -232,172 +232,6 @@ padding: 0.5em;
 
 /* Produktuak */
 
-/* Slider bakoitza container desberdin batean doa*/
-.container {
-position: relative;
-overflow: hidden;
-width: 35vw;
-height: 40vh;
-margin: 6vw;
-float:left;
-}
-
-/* Sliderrak */
-.container .slider {
-position: absolute;
-top: 0;
-left: 0;
-width: 600%;/*KONTUZ! 100*Slide kopurua*/
-height: 100%;
-animation: animate 20s linear infinite;
-}
-.container .slider .slide {
-position: relative;
-width: 16.66%;/*KONTUZ! 100%/Slide kopurua */
-height: 100%;
-float: left;
-}
-/*Sliderren testu kutxa*/
-.container .slider .slide .caption {
-position: absolute;
-bottom: 60px;
-right: 60px;
-left: 60px;
-padding: 30px;
-background-color: rgba(0,0,0,.7);
-box-sizing:border-box;
-transition: 0.5s;
-
-}
-/* Sliderren izenburua*/
-.container .slider .slide .caption h2 {
-margin: 0;
-padding: 0;
-color: #fff;
-font-size: 48px;
-transition: 0.5s;
-}
-/* Sliderren testua*/
-.container .slider .slide .caption p {
-margin: 0;
-padding: 0;
-color: #fff;
-font-size: 18px;
-transition: 0.5s;
-}
-
-/* Slider bakoitzean doan irudia*/
-/*KONTUZ! seletor osoa behar da eta cover eta center errepikatu behar dira*/
-.container .slider .slide.slide1 {
-background: url(../img/produktuak/amaplaka.png);
-background-size: cover;
-background-position: center;
-}
-.container .slider .slide.slide2 {
-background: url(../img/produktuak/puz.jpg);
-background-size: cover;
-background-position: center;
-}
-.container .slider .slide.slide3 {
-background: url(../img/produktuak/ram.jpg);
-background-size: cover;
-background-position: center;
-}
-.container .slider .slide.slide4 {
-background: url(../img/produktuak/ssd.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide5 {
-background: url(../img/produktuak/kutxa.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide6 {
-background: url(../img/produktuak/alimentazioa.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide7 {
-background: url(../img/produktuak/errelea.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide8 {
-background: url(../img/produktuak/etengailua.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide9 {
-background: url(../img/produktuak/erresistentzia.png);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide10 {
-background: url(../img/produktuak/motorra.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide11 {
-background: url(../img/produktuak/kablea.jpg);
-background-size: cover;
-background-position: center;
-}
-
-.container .slider .slide.slide12 {
-background: url(../img/produktuak/harguneak.jpg);
-background-size: cover;
-background-position: center;
-}
-
-/* Sliderraren animazioa*/
-/*KONTUZ balio bera errepikatu behar da denbora batez sliderra geldi egon dadin*/
-@keyframes animate {
-0% {left: 0;}
-
-11.66% {left: 0;}
-16.66% {left:-100%;}
-
-28.33% {left:-100%;}
-33.33% {left: -200%;}
-
-44.99% {left: -200%;}
-49.99% {left: -300%;}
-
-61.66% {left:-300%;}
-66.66% {left: -400%;}
-
-78.33% {left:-400%;}
-83.33% {left: -500%;}
-
-95% {left:-500%;}
-100% {left:-600%;}
-
-}
-/*Sliderra pantaila txikiagoetara egokitzeko*/
-@media screen and (max-width: 768px) {
-.container .slider .slide .caption {
-  bottom: 20px;
-  right: 20px;
-  left: 20px;
-  padding: 20px;
-}
-.container .slider .slide .caption h2 {
-  margin: 0 0 10px;
-  font-size: 30px;
-}
-.container .slider .slide .caption p {
-  font-size: 16px;
-}
-}
-
 .dendazerrenda{
 clear: both;
 background: rgba(255,255,255,0.8);
@@ -406,8 +240,9 @@ margin: 2em auto 5em auto;
 padding: 1em 5em;
 font-size: 120%;
 color:black;
-width: 15em;
-
+width: 20em;
+float: left;
+margin-left: 5%;
 }
 .dendazerrenda ul ul{
 margin-bottom: 1em;
@@ -416,6 +251,24 @@ margin-bottom: 1em;
 color:black;
 }
 
+.knowledge{
+clear: both;
+background: rgba(255,255,255,0.8);
+border-radius:0.5em;
+margin: 2em auto 5em auto;
+padding: 1em 5em;
+font-size: 120%;
+color:black;
+width: 20em;
+float: right;
+margin-right: 5%;
+}
+.knowledge ul ul{
+margin-bottom: 1em;
+}
+.knowledge a{
+color:black;
+}
 /*Kontaktua*/
 
 /*mapa */
